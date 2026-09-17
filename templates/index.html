@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Lung Cancer Risk Prediction</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Lung Cancer Risk Prediction</h1>
+
+    <form action="/predict" method="POST">
+
+        <label>Age</label>
+        <input type="number" name="age" required>
+
+
+        <label>Gender</label>
+
+        <select name="gender">
+
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+
+        </select>
+    <h3> Fill the following data between the range ( 1-8 )</h3>
+
+        <label>Air Pollution</label>
+        <input type="number" name="air_pollution" min="1" max="8" required>
+
+
+        <label>Alcohol Use</label>
+        <input type="number" name="alcohol_use" min="1" max="8" required>
+
+
+        <label>Dust Allergy</label>
+        <input type="number" name="dust_allergy" min="1" max="8" required>
+
+
+        <label>Occupational Hazards</label>
+        <input type="number" name="occupational_hazards" min="1" max="8" required>
+
+
+        <label>Genetic Risk</label>
+        <input type="number" name="genetic_risk" min="1" max="8" required>
+
+
+        <label>Chronic Lung Disease</label>
+        <input type="number" name="chronic_lung_disease" min="1" max="8" required>
+
+
+        <label>Balanced Diet</label>
+        <input type="number" name="balanced_diet" min="1" max="8" required>
+
+
+        <label>Obesity</label>
+        <input type="number" name="obesity" min="1" max="8" required>
+
+
+        <label>Smoking</label>
+        <input type="number" name="smoking" min="1" max="8" required>
+
+
+        <label>Passive Smoker</label>
+        <input type="number" name="passive_smoker" min="1" max="8" required>
+
+
+        <label>Chest Pain</label>
+        <input type="number" name="chest_pain" min="1" max="8" required>
+
+
+        <label>Coughing of Blood</label>
+        <input type="number" name="coughing_of_blood" min="1" max="8" required>
+
+
+        <label>Fatigue</label>
+        <input type="number" name="fatigue" min="1" max="8" required>
+
+
+        <label>Weight Loss</label>
+        <input type="number" name="weight_loss" min="1" max="8" required>
+
+
+        <label>Shortness of Breath</label>
+        <input type="number" name="shortness_of_breath" min="1" max="8" required>
+
+
+        <label>Wheezing</label>
+        <input type="number" name="wheezing" min="1" max="8" required>
+
+
+        <label>Swallowing Difficulty</label>
+        <input type="number" name="swallowing_difficulty" min="1" max="8" required>
+
+
+        <label>Clubbing of Finger Nails</label>
+        <input type="number" name="clubbing_of_finger_nails" min="1" max="8" required>
+
+
+        <label>Frequent Cold</label>
+        <input type="number" name="frequent_cold" min="1" max="8" required>
+
+
+        <label>Dry Cough</label>
+        <input type="number" name="dry_cough" min="1" max="8" required>
+
+
+        <label>Snoring</label>
+        <input type="number" name="snoring" min="1" max="8" required>
+
+
+        <button type="submit">
+            Predict Cancer Risk
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
